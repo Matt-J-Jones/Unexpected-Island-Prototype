@@ -14,6 +14,8 @@ public class Receiver : MonoBehaviour
     public Item Tree_Cut;
     public Item Reward;
 
+    public FirePit FirePit;
+
     void Start()
     {
         
@@ -29,6 +31,7 @@ public class Receiver : MonoBehaviour
         {
             Tree_Cut.gameObject.SetActive(false);
             Reward.gameObject.SetActive(true);
+            FirePit.LogCount += 1;
             gameObject.SetActive(false);
         }
     }

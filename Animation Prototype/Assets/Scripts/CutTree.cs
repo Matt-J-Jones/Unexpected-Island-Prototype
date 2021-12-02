@@ -7,6 +7,7 @@ public class CutTree : MonoBehaviour
     public Receiver Receiver;
 
     public ChopWood ChopWood;
+
     
     // Start is called before the first frame update
     void Start()
