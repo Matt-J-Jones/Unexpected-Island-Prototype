@@ -7,6 +7,7 @@ public class FirePit : MonoBehaviour
 
     public int LogCount = 0;
     public Item Fire;
+    public Item TextEnd;
 
     public bool CondMet = false;
     public bool LogCollect = false;
@@ -46,6 +47,7 @@ public class FirePit : MonoBehaviour
           Input.GetKeyDown(KeyCode.Q))
       {
         Fire.gameObject.SetActive(true);
+        TextEnd.gameObject.SetActive(true);
       }
     }
     void OnTriggerEnter(Collider other) // Player has entered collider
